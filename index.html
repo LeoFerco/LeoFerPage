@@ -218,7 +218,7 @@
         }
         
         .highlight {
-            background: linear-gradient(135deg, #f39c12, #e67e22);
+            background: linear-gradient(135deg, #e74c3c, #f7dc6f);
             color: white;
             padding: 20px;
             border-radius: 10px;
@@ -229,7 +229,7 @@
         }
         
         .personal-quote {
-            background: linear-gradient(135deg, #8e44ad, #9b59b6);
+            background: linear-gradient(135deg, #dc7633, #f4d03f);
             color: white;
             padding: 25px;
             border-radius: 10px;
@@ -240,26 +240,108 @@
             box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
         }
         
+        /* Mejoras para dispositivos móviles */
         @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
             .contact-info {
                 flex-direction: column;
                 gap: 15px;
+                align-items: center;
+            }
+            
+            .contact-item {
+                justify-content: center;
+                font-size: 0.9em;
             }
             
             .name {
                 font-size: 2em;
+                line-height: 1.2;
+            }
+            
+            .title {
+                font-size: 1.1em;
             }
             
             .content {
-                padding: 20px;
+                padding: 25px 20px;
+            }
+            
+            .section-title {
+                font-size: 1.3em;
             }
             
             .skills-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .skill-category {
+                padding: 15px;
             }
             
             .languages {
                 flex-direction: column;
+                gap: 15px;
+            }
+            
+            .language {
+                min-width: auto;
+                padding: 12px 20px;
+            }
+            
+            .experience-item, .education-item {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .job-title {
+                font-size: 1.1em;
+            }
+            
+            .highlight {
+                padding: 15px;
+                font-size: 0.95em;
+            }
+            
+            .personal-quote {
+                padding: 20px;
+                font-size: 1em;
+            }
+        }
+
+        /* Para pantallas muy pequeñas */
+        @media (max-width: 480px) {
+            .name {
+                font-size: 1.8em;
+            }
+            
+            .title {
+                font-size: 1em;
+            }
+            
+            .contact-item {
+                font-size: 0.85em;
+            }
+            
+            .section-title {
+                font-size: 1.2em;
+            }
+            
+            .skill-item {
+                font-size: 0.85em;
+                padding: 6px 12px;
             }
         }
     </style>
@@ -271,17 +353,13 @@
                 <p class="title">El León científico</p>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span>📧</span>
-                        <span>leonferco15@gmail.com</span>
+                        <span></span>
+                        <span>leonferco151@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <span></span>
-                        <span>Guerrero, México</span>
                     </div>
-                    <div class="contact-item">
-                        <span></span>
-                        <span>Disponibilidad 100% Remoto</span>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -296,31 +374,31 @@
             <div class="section">
                 <h2 class="section-title">Perfil Profesional</h2>
                 <p class="description">
-                    Desarrollador de código con experiencia en programación con Java, Python, Css y HTML tanto backend, como frontend. 
+                    Soy desarrollador de código con experiencia en programación con Java, Python, CSS y HTML tanto backend, como frontend. 
 <br>
 <br>
-Nacido en EUA con dominio nativo del inglés resido en México donde estudio la universidad. 
+Nací en EUA con dominio nativo del inglés y resido en México donde estudio la universidad. 
 <br>
-Disfruto aprender cosas nuevas e ingeniar nuevas aplicaciones para ello. 
+Disfruto aprender cosas nuevas e inventar nuevas aplicaciones para todo tipo de problemas. 
 <br>
 <br>
 Si tuviera que describirme en unas cuantas palabras: <br>
-Soy una persona polivalente, adepta y versátil con capacidad excepcional de adaptación y aprendizaje de múltiples áreas        </p>
+Soy una persona versátil, adepto y flexible con gran capacidad de adaptación y aprendizaje en múltiples áreas        </p>
             </div>
             
             <div class="section">
-                <h2 class="section-title">Experiencia Profesional</h2>
+                <h2 class="section-title">Experiencia y Trayectoria</h2>
                 <div class="experience-item">
                     <div class="job-title">Desarrollo de código</div>
                     <div class="company">Proyectos Independientes</div>
                     <div class="period">2020 - Presente (4 años)</div>
                     <div class="description">
-                        • Desarrollo de sitios web personalizados usando, HTML, CSS y JavaScript con consolas desde el bloc de notas, sublime text hasta code pen<br>
-                        • Creación de modelos de simulación y programas matématicos con Java y Python<br>
-                        • Desarrollo de aplicaciones móviles<br>
-                        • Le sé un tanto a las bases de datos<br>
-                        • Gestión completa de proyectos desde conceptualización hasta implementación<br>
-                        • Mantenimiento y actualización continua de programas.
+                        • Desarrollo sitios web personalizados usando HTML, CSS y JavaScript con diferentes herramientas desde el bloc de notas, sublime text hasta code pen<br>
+                        • Creo modelos de simulación y programas matemáticos con Java y Python<br>
+                        • Desarrollo aplicaciones móviles<br>
+                        • Manejo desarrollo y uso de bases de datos<br>
+                        • Gestiono proyectos completos desde la idea inicial hasta la implementación<br>
+                        • Mantengo y actualizo programas de forma continua.
                     </div>
                 </div>
             </div>
@@ -331,57 +409,18 @@ Soy una persona polivalente, adepta y versátil con capacidad excepcional de ada
                     <div class="job-title">Ingeniería en Sistemas</div>
                     <div class="company">En Curso</div>
                     <div class="description">
-                        Estudiante de Ingeniería en Sistemas con enfoque en desarrollo de software, tecnologías web e innovación tecnológica.
+                        Estudio Ingeniería en Sistemas computacionales con enfoque en desarrollo de software, tecnologías web e innovación tecnológica.
                     </div>
                 </div>
                 <div class="education-item">
                     <div class="job-title">Técnico en Físico Matemático</div>
                     <div class="company">Titulado</div>
                     <div class="description">
-                        Sólida base en matemáticas aplicadas y principios físicos, proporcionando una perspectiva analítica única para la resolución de problemas técnicos.
+                        Tengo conocimientos sólidos en matemáticas aplicadas, principios físicos y conceptos abstractos que me dan una perspectiva analítica única para resolver problemas técnicos.
                     </div>
                 </div>
             </div>
-            
-            <div class="section">
-                <h2 class="section-title">Habilidades Técnicas</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>Desarrollo Web</h4>
-                        <div class="skill-item"></div>
-                        <div class="skill-item">HTML</div>
-                        <div class="skill-item">C</div>
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">PHP</div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Programación</h4>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">Desarrollo Móvil</div>
-                        
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Bases de Datos</div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Habilidades Blandas</h4>
-                        <div class="skill-item">Comprensión Lectora Sobresaliente</div>
-                        <div class="skill-item">Aprendizaje Rápido</div>
-                        <div class="skill-item">Comunicación Efectiva</div>
-                        <div class="skill-item">Trabajo en Equipo</div>
-                        <div class="skill-item">Resolución de Problemas</div>
-                        <div class="skill-item">Organización</div>
-                    </div>
-                    <div class="skill-category">
-                        <h4>Especialidades</h4>
-                        <div class="skill-item">Dibujo Técnico</div>
-                        <div class="skill-item">Geometría Aplicada</div>
-                        <div class="skill-item">Audio/Video</div>
-                        <div class="skill-item">Matemáticas Avanzadas</div>
-                        <div class="skill-item">Análisis Lógico</div>
-                    </div>
-                </div>
-            </div>
-            
+
             <div class="section">
                 <h2 class="section-title">Idiomas</h2>
                 <div class="languages">
@@ -399,15 +438,54 @@ Soy una persona polivalente, adepta y versátil con capacidad excepcional de ada
                     </div>
                 </div>
             </div>
+
+            <div class="section">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Desarrollo Web</h4>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">PHP</div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Programación</h4>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Desarrollo Móvil</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">Bases de Datos</div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Habilidades Personales</h4>
+                        <div class="skill-item">Comprensión Lectora Excelente</div>
+                        <div class="skill-item">Aprendizaje Rápido</div>
+                        <div class="skill-item">Comunicación Efectiva</div>
+                        <div class="skill-item">Trabajo en Equipo</div>
+                        <div class="skill-item">Resolución de Problemas</div>
+                        <div class="skill-item">Organización</div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Especialidades</h4>
+                        <div class="skill-item">Dibujo Técnico</div>
+                        <div class="skill-item">Geometría Aplicada</div>
+                        <div class="skill-item">Audio/Video</div>
+                        <div class="skill-item">Matemáticas Avanzadas</div>
+                        <div class="skill-item">Análisis Lógico</div>
+                    </div>
+                </div>
+            </div>
+            
+            
             
             <div class="section">
-                <h2 class="section-title">Ventajas Competitivas</h2>
+                <h2 class="section-title">Mis Ventajas Competitivas</h2>
                 <div class="description">
-                    <strong>🇺🇸 Ventaja Cultural:</strong> Al ser nacido en EUA comprendo perfectamente la cultura americana y las expectativas de los clientes.<br><br>
-                    <strong> Aprendizaje Acelerado:</strong> Capacidad excepcional para dominar nuevas tecnologías conceptos, herramientas etc.<br><br>
-                    <strong>Pensamiento Analítico:</strong> Formación técnica en físico-matemáticas que me permite abordar problemas complejos con metodología científica.<br><br>
-                    <strong> Comunicación Efectiva:</strong> Personalidad extrovertida con habilidades naturales para establecer conexiones con clientes y equipos de trabajo.<br><br>
-                    <strong> Disponibilidad Total:</strong> Listo para comenzar inmediatamente con horarios flexibles para clientes internacionales.
+                    <strong>Ventaja Cultural:</strong> Al haber nacido en EUA comprendo perfectamente la cultura americana y las expectativas de los clientes.<br><br>
+                    <strong>Aprendizaje Acelerado:</strong> Tengo una capacidad especial para dominar rápidamente nuevas tecnologías, conceptos y herramientas.<br><br>
+                    <strong>Pensamiento Analítico:</strong> Mi formación técnica en físico-matemáticas me permite abordar problemas complejos con método científico.<br><br>
+                    <strong>Comunicación Efectiva:</strong> Tengo una personalidad extrovertida con habilidades naturales para conectar con clientes y equipos de trabajo.<br><br>
+                    <strong>Disponibilidad Total:</strong> Estoy listo para comenzar inmediatamente con horarios flexibles para clientes internacionales.
                 </div>
             </div>
             
